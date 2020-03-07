@@ -11,7 +11,6 @@ void getOddOccurrence(int A[],int arr_size)
   {
       m[A[i]]++;
   }
-  int count=0;
   for(auto i:m)
   {
       if(i.second%2!=0)
