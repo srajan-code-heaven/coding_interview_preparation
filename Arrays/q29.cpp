@@ -1,3 +1,7 @@
+// Ugly numbers are those number whose prime factors are 2, 3 or 5. From 1 to 15,
+// there are 11 ugly numbers 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15. The numbers 7, 11, 13 are not ugly
+// because they are prime. The number 14 is not ugly because in its prime factor the 7 will come.
+
 
 # include<bits/stdc++.h>
 using namespace std;
@@ -38,4 +42,4 @@ int main()
     int n = 150;
     cout << getNthUglyNo(n);
     return 0;
-} 
+}

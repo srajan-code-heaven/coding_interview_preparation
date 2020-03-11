@@ -1,7 +1,6 @@
 // Java program to find the index of
 // first '1' in a sorted array of 0's and 1's
 class GFG {
-
    // function to find the index of first '1'
    // binary search technique is applied
    public static int indexOfFirstOne(int arr[], int low,
@@ -37,4 +36,4 @@ class GFG {
                                              n - 1));
 
    }
- } 
+ }

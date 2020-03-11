@@ -1,7 +1,6 @@
-
 //Find the first circular tour that visits all petrol pumps
 #include <bits/stdc++.h>
-using namespace std; 
+using namespace std;
 
 struct petrolPump
 {

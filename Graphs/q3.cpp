@@ -35,7 +35,7 @@ void dijkstra(int graph[][V],int src)
     bool vis[V];
     int fdis[V];
     int parent[V];
-     for (int i = 0; i < V; i++)
+    for (int i = 0; i < V; i++)
     {
         vis[i]=0;
         fdis[i]=INT_MAX;
@@ -81,4 +81,4 @@ int main()
 
     dijkstra(graph, 0);
     return 0;
-} 
+}
