@@ -1,4 +1,3 @@
-
 //Shortest path in a Binary Maze (Using application of Breadth First Search Algorithm)
 
 #include <stdio.h>

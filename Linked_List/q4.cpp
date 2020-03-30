@@ -1,6 +1,4 @@
-
-
-// C++ program to return first node of loop in linked list and also remove it 
+// C++ program to return first node of loop in linked list and also remove it
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -48,7 +46,6 @@ Node* detectAndRemoveLoop(Node* head)
     while (fast && fast->next) {
         if (slow == fast)
             break;
-        prev=fast->next;
         slow = slow->next;
         fast = fast->next->next;
     }

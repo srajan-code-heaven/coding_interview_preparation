@@ -3,7 +3,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-  void equilibrium(int arr[], int size)
+void equilibrium(int arr[], int size)
 {
     int sum=0;
     int left=0;

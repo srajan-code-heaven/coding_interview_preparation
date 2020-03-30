@@ -5,7 +5,7 @@ using namespace std;
 
 // Function to return the required fraction
 // in string format
-string calculateFraction(int num, int den)
+string calculateFraction(int num,int den)
 {
 	// If the numerator is zero, answer is 0
 	if (num == 0)
@@ -16,7 +16,7 @@ string calculateFraction(int num, int den)
 	int sign = (num < 0) ^ (den < 0) ? -1 : 1;
 
 	num = abs(num);
-	den = abs(den); 
+	den = abs(den);
 
 	// Calculate the absolute part (before decimal point).
 	int initial = num / den;

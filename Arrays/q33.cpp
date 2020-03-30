@@ -19,8 +19,6 @@ void merge(int arr1[],int arr2[],int m,int n)
        arr1[j+1]=arr2[i];
        arr2[i]=last;
         }
-
-
     }
 }
 

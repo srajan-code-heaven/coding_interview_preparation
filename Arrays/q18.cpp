@@ -9,6 +9,7 @@ void swap(int *a,int *b)
     *a=*b;
     *b=temp;
 }
+
 void sortinwave(int a[],int n)
 {
  for(int i=0;i<n;i=i+2)

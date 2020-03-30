@@ -8,7 +8,6 @@ int smallestSubWithSum(int arr[],int n,int x)
 {
     int curr_sum=0,min_len=n+1;
     int start=0,end=0;
-
     while(end<n)
     {
         while(curr_sum<x && end<n)
@@ -23,7 +22,6 @@ int smallestSubWithSum(int arr[],int n,int x)
             }
             curr_sum=curr_sum-arr[start++];
         }
-
     }
     return min_len;
 }

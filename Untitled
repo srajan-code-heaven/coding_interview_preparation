@@ -1,0 +1,47 @@
+unordered_set<int> s;
+s.find(temp)!=s.end()
+s.insert(arr[i]);
+
+
+unordered_map<int,int> m;
+m[A[i]]++;
+for(auto i:m)
+i.second > arr_size/2
+maj=i.first;
+
+
+swap(a,b);
+
+
+vector<string> arr;
+arr.push_back("54");
+sort(arr.begin(),arr.end(),mycompare);
+string YX=Y.append(X);
+if(stoi(XY)>stoi(YX))    (string to integer)
+
+
+to_string  (integer to String)
+
+
+
+
+	map<int, int> mp;
+  mp.find(rem) != mp.end()
+
+  	res.insert(index, "(");   {Result is a String}
+
+
+
+
+    str.charAt(i) - '0'   {Character to it's ASCII integer value conversion}
+
+
+
+	C = C * (line - i) / i;  {Pascal's Triangle}
+
+  str.length()  - to get length of the string
+
+  temp.find(str2) != string::npos
+
+
+  str2.substr(len-2, 2)  startpoint , length    

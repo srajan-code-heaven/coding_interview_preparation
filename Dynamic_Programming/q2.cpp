@@ -9,8 +9,6 @@ void printSubStr( string str, int low, int high )
         cout << str[i];
 }
 
-
-
 int longestPalSubstr(string str)
 {
    int maxlen = 1;

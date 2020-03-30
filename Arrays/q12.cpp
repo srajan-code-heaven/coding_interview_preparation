@@ -18,7 +18,6 @@ void find3Numbers(int arr[], int size,int sum)
            s.insert(arr[j]);
        }
    }
-
 }
 
 /* Driver code */

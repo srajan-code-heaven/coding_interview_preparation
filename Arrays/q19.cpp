@@ -10,6 +10,7 @@ void swap(int *a,int *b)
     *a=*b;
     *b=temp;
 }
+
 void TappingRainwaterProblem(int arr[],int n)
 {
     int res=0;
@@ -31,9 +32,10 @@ void TappingRainwaterProblem(int arr[],int n)
     }
     cout<<res;
 }
+
 int main()
 {
- int arr[] = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+    int arr[] = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
     int n = sizeof(arr) / sizeof(arr[0]);
     cout << "Maximum water that can be accumulated is : ";
     TappingRainwaterProblem(arr,n);

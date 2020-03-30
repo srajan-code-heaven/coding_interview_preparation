@@ -3,7 +3,6 @@
 
 // '#' -->  This cell is a blocking cell.
 //          We can not go anywhere from this.
-
 // 'E' -->  This cell is empty. We don't get
 //          a coin, but we can move from here.
 #include<bits/stdc++.h>
@@ -49,4 +48,4 @@ int main()
          << maxCoinsRec(arr, 0, 0, 1);
 
     return 0;
-} 
+}

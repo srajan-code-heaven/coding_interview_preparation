@@ -5,7 +5,6 @@ using namespace std;
 void findCommonOfThree(int a1[],int a2[],int a3[],int n1,int n2,int n3)
 {
     int i=0,j=0,k=0;
-
     while(i<n1 && j<n2 && k<n3)
     {
         if(a1[i]==a2[j] && a2[j]==a3[k])
@@ -36,6 +35,5 @@ int main()
     int n2 = sizeof(ar2)/sizeof(ar2[0]);
     int n3 = sizeof(ar3)/sizeof(ar3[0]);
     findCommonOfThree(ar1, ar2, ar3, n1, n2, n3);
-
     return 0;
 }

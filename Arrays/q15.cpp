@@ -13,7 +13,6 @@ void findSmallest(int arr[], int size)
    }
    cout<<sum;
 }
-
 /* Driver code */
 int main()
 {

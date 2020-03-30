@@ -1,6 +1,6 @@
 //Algorithm to find the contiguous sub-array with maximum sum, for a given array of postive and negative numbers.
 //Kadane's Algorithm
-#include <stdio.h>
+#include<stdio.h>
 #include<bits/stdc++.h>
 using namespace std;
 int maxSubArraySum(int a[],int n)

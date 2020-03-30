@@ -8,12 +8,7 @@ using namespace std;
 
 bool areAnagram(char* str1, char* str2)
 {
-    // Create a count array and initialize all values as 0
     int count[NO_OF_CHARS] = { 0 };
-    int i;
-
-    // For each character in input strings, increment count in
-    // the corresponding count array
     for (i = 0; str1[i] && str2[i]; i++) {
         count[str1[i]]++;
         count[str2[i]]--;

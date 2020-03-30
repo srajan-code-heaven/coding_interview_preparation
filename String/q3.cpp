@@ -1,6 +1,6 @@
 
 // C++ program to output the maximum occurring character
-// in a string 
+// in a string
 #include<bits/stdc++.h>
 #define ASCII_SIZE 256
 using namespace std;
@@ -10,7 +10,6 @@ char getMaxOccuringChar(char* str)
     // Create array to keep the count of individual
     // characters and initialize the array as 0
     int count[ASCII_SIZE] = {0};
-
     // Construct character count array from the input
     // string.
     int len = strlen(str);
@@ -26,10 +25,8 @@ char getMaxOccuringChar(char* str)
             result = str[i];
         }
     }
-
     return result;
 }
-
 // Driver program to test the above function
 int main()
 {

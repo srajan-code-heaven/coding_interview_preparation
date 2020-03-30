@@ -25,13 +25,11 @@ void printLargest(vector<string> arr)
 int main()
 {
     vector<string> arr;
-
     //output should be 6054854654
     arr.push_back("54");
     arr.push_back("546");
     arr.push_back("548");
     arr.push_back("60");
     printLargest(arr);
-
-   return 0;
+    return 0;
 }

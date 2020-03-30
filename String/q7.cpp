@@ -6,7 +6,7 @@
 // ending with pointer end
 void reverse(char* begin, char* end)
 {
-    char temp; 
+    char temp;
     while (begin < end) {
         temp = *begin;
         *begin++ = *end;
@@ -18,7 +18,6 @@ void reverse(char* begin, char* end)
 void reverseWords(char* s)
 {
     char* word_begin = s;
-
     // Word boundary
     char* temp = s;
 

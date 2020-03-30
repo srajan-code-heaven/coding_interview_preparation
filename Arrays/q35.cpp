@@ -14,7 +14,6 @@ void rearrange(int arr[], int n)
     // Indexes of smallest and largest elements
     // from remaining array.
     int small=0, large=n-1;
-
     // To indicate whether we need to copy rmaining
     // largest or remaining smallest at next position
     int flag = true;
@@ -51,4 +50,4 @@ int main()
     for (int i=0; i<n; i++)
         cout << arr[i] << " ";
     return 0;
-} 
+}

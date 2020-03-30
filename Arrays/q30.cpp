@@ -1,4 +1,3 @@
-
 //Subarray with given sum
 #include<bits/stdc++.h>
 #include<stdio.h>

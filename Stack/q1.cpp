@@ -14,8 +14,7 @@ struct mystack
     void getMin()
     {
         if(s.empty())
-        {
-
+        { 
             cout<<"stack is empty";
         }
         else
