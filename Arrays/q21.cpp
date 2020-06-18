@@ -4,8 +4,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
 void missing4(int arr[],int n)
 {
     int extra[4];

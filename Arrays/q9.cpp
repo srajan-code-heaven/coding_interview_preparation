@@ -6,7 +6,7 @@ void printRepeatinginO1space(int arr[], int size)
 {
     for(int i=0;i<size;i++)
     {
-        arr[arr[i]%10]= arr[arr[i]%10] +10;
+        arr[arr[i]%10]= arr[arr[i]%10] + 10;
         if(arr[arr[i]%10]>19)
         {
             cout<<arr[i]%10<<" ";

@@ -33,7 +33,6 @@ int findPlatform(int arr[],int dep[],int n)
        }
    }
    return ans;
-
 }
 
 int main()
@@ -44,4 +43,4 @@ int main()
     cout << "Minimum Number of Platforms Required = "
          << findPlatform(arr, dep, n);
     return 0;
-} 
+}
