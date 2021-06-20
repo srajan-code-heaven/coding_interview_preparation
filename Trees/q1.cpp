@@ -1,5 +1,8 @@
 //Convert a given Binary Tree to Doubly Linked List | Set 4
 
+
+//node right insert at begin of linked list node left
+
 #include <stdio.h>
 #include <bits/stdc++.h>
 using namespace std;
@@ -9,6 +12,7 @@ struct Node{
     int data;
     Node* left,*right;
 };
+
 Node* newNode(int data)
 {
     Node* node=new Node;

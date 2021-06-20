@@ -1,17 +1,78 @@
 1.What are you doing in your current project
 5.difference between abstract classes and interfaces
 
+Main difference is methods of a Java interface are implicitly abstract and cannot have implementations. A Java abstract class can have instance methods that implements a default behavior.
+Variables declared in a Java interface is by default final. An  abstract class may contain non-final variables.
+Members of a Java interface are public by default. A Java abstract class can have the usual flavors of class members like private, protected, etc..
+Java interface should be implemented using keyword “implements”; A Java abstract class should be extended using keyword “extends”.
+An interface can extend another Java interface only, an abstract class can extend another Java class and implement multiple Java interfaces.
+A Java class can implement multiple interfaces but it can extend only one abstract class.
+Interface is absolutely abstract and cannot be instantiated; A Java abstract class also cannot be instantiated, but can be invoked if a main() exists.
+In comparison with java abstract classes, java interfaces are slow as it requires extra indirection.
 6. Different level of inheritance
 
 7.What is method hiding
 
+First of all What is meant by method Hiding?
+
+Method hiding means subclass has defined a class method with the same signature as a class method in the superclass. In that case the method of superclass is hidden by the subclass. It signifies that : The version of a method that is executed will NOT be determined by the object that is used to invoke it. In fact it will be determined by the type of reference variable used to invoke the method.
+
+What is meant by method overriding?
+
+Method overriding means subclass had defined an instance method with the same signature and return type( including covariant type) as the instance method in superclass. In that case method of superclass is overridden(replaced) by the subclass. It signifies that: The version of method that is executed will be determined by the object that is used to invoke it. It will not be determined by the type of reference variable used to invoke the method.
+
+Why can't static methods be overridden?
+
+Because, static methods are resolved statically (i.e. at compile time) based on the class they are called on and not dynamically as in the case with instance methods which are resolved polymorphically based on the runtime type of the object.
+
+How should static methods be accessed?
+
+Static methods should be accessed in static way. i.e. by the name of class itself rather than using an instance.
+
+Here is the short Demo for method overriding and hiding:
+
+class Super
+{
+  public static void foo(){System.out.println("I am foo in Super");}
+  public void bar(){System.out.println("I am bar in Super");}
+}
+class Child extends Super
+{
+  public static void foo(){System.out.println("I am foo in Child");}//Hiding
+  public void bar(){System.out.println("I am bar in Child");}//Overriding
+  public static void main(String[] args)
+  {
+     Super sup = new Child();//Child object is reference by the variable of type Super
+     Child child = new Child();//Child object is referenced by the variable of type Child
+     sup.foo();//It will call the method of Super.
+     child.foo();//It will call the method of Child.
+
+     sup.bar();//It will call the method of Child.
+     child.bar();//It will call the method of Child again.
+  }
+}
+Output is
+
+I am foo in Super
+I am foo in Child
+I am bar in Child
+I am bar in Child
+
+
+
+
 8.What is Polymorphism
+
+https://www.geeksforgeeks.org/polymorphism-in-java/
+
+
 
 9.Which datastructure should you use if you have given a repoistry and multiple rows are retrived in your process service class and you need to find the latest version of the data that is being retrieved out of all rows based on the timestamp filed present in the repoistry
 
 Answer : Priority queue
 
 10.Why JDBC template being used in your project
+
 
 11. If you need to change design of your current project what changes will you do.
 
@@ -21,9 +82,294 @@ Answer : Priority queue
 
 Answer: Trie
 
-14. Why not binary tree is being used in place of true.
+14. Why not binary tree is being used in place of trie.
+Why Trie? :-
+
+With Trie, we can insert and find strings in O(L) time where L represent the length of a single word. This is obviously faster than BST. This is also faster than Hashing because of the ways it is implemented. We do not need to compute any hash function. No collision handling is required (like we do in open addressing and separate chaining)
+Another advantage of Trie is, we can easily print all words in alphabetical order which is not easily possible with hashing.
+We can efficiently do prefix search (or auto-complete) with Trie.
+
+
+The main disadvantage of tries is that they need a lot of memory for storing the strings
+
+ if space is concerned, then Ternary Search Tree can be preferred for dictionary implementations.
+
+
+
+
 What is git ? All git commands that I know ? What are branches in git ? Why use git ?
+https://www.freecodecamp.org/news/10-important-git-commands-that-every-developer-should-know/
+
+
 
 Q.4 Some Concepts of OOPs.
 
 Q.5 Real-World oops example (please don’t tell bookish example like library management system)
+
+
+HashMap implementation
+
+
+What is dependency injection?
+
+
+How does priority queues and TreeMap works internally?
+
+
+Java Collections and Multi threading
+
+
+OOP’s concepts
+
+
+Collections, use of HashMap and ConcurrentHashMap difference between them.
+
+Multi threading, Green threads, whether java uses Green threads.
+https://www.tutorialspoint.com/difference-between-green-and-native-thread
+
+
+JVM, classloader different types and their hierarchy and class loading mechanism, heap space and stack.
+https://www.geeksforgeeks.org/classloader-in-java/
+
+BootStrap ClassLoader:
+Extension ClassLoader:
+System ClassLoader:
+getClassLoader()
+
+
+String, Immutable classes
+
+
+map (unordered_map, simple map related to time complexity)
+
+
+Hashmap implementation, various hashing techniques
+
+
+4.asked me to explain almost all object oriented concepts with real world example.
+
+
+
+5. Few questions on keywords like final(C), finally(java), public, private, protected
+
+
+
+
+
+design fb
+
+
+Design Railway Ticket Booking System – lot of discussion. I had to write various classes with their attributes and methods. Relation between those classes etc
+
+Second Question :
+
+Design feature of cart for E-commerce website
+
+Third Question :
+
+Design system where different types of procedure will invoked based on the file type retrieved from database to server for processing.
+
+
+Multi-tier architecture
+
+
+Q.1> You are given are two threads (T1 and T2) for generation and two threads (T3 and T4) for validation. How do you make sure that T3 & T4 runs only after (T1 & T2).
+
+
+Q.2> How do you make a class immutable? He then asked me what if the class have reference to some APIs which has setter methods. I couldn’t answer that.
+
+
+Q.3> What is the difference between countdown *something* and *something*. Couldn’t hear properly.
+
+Q.4> What is a volatile keyword?
+
+
+
+Q.5> Difference between LinkedHashMap and HashMap
+https://www.geeksforgeeks.org/differences-treemap-hashmap-linkedhashmap-java/
+
+
+Q.6> DIfference between ConcurrentHashMap and SynchronizedHashMap.
+https://crunchify.com/hashmap-vs-concurrenthashmap-vs-synchronizedmap-how-a-hashmap-can-be-synchronized-in-java/
+
+//Hashtable
+Map<String, String> normalMap = new Hashtable<String, String>();
+
+//synchronizedMap
+synchronizedHashMap = Collections.synchronizedMap(new HashMap<String, String>());
+
+//ConcurrentHashMap
+concurrentHashMap = new ConcurrentHashMap<String, String>();
+
+https://javahungry.blogspot.com/2019/04/hashmap-interview-questions-and-answers.html
+
+https://www.javatpoint.com/java-multithreading-interview-questions
+
+ConcurrentHashMap does not allow keys to contain null values whereas HashMap can contain one null key.
+
+static final int TREEIFY_THRESHOLD = 8;
+
+
+static final int UNTREEIFY_THRESHOLD = 6;
+
+
+
+A. Design a parking management software. The solution should involve use of data structures, algorithms, OOP related concepts and various error handling techniques(try/catch and backup).
+
+
+hashmap complexity
+
+
+3 questions.
+1st question is about multi-threading.
+2nd question find all common string in large set of files in optimized way.
+3rd question was about collection list and sets.
+
+1st Technical
+--------------------
+1st about hashmap, how do we implement hashcode() and equals().
+https://dzone.com/articles/working-with-hashcode-and-equals-in-java#:~:text=If%20two%20objects%20are%20equal,produce%20the%20same%20integer%20result.
+
+java.lang.Object
+
+equals(Object obj):
+
+hashcode():
+
+//custom Key class to override hashCode()
+// and equals() method
+class Key
+{
+  String key;
+  Key(String key)
+  {
+    this.key = key;
+  }
+
+  @Override
+  public int hashCode()
+  {
+     return (int)key.charAt(0);
+  }
+
+  @Override
+  public boolean equals(Object obj)
+  {
+    return key.equals((String)obj);
+  }
+
+
+public boolean equals(Object obj) {
+    if (obj == null) return false;
+    if (!(obj instanceof Student))
+        return false;
+    if (obj == this)
+        return true;
+    return this.getId() == ((Student) obj).getId();
+}
+
+}
+
+copyonwrite ArrayList
+https://www.geeksforgeeks.org/copyonwritearraylist-in-java/
+static CopyOnWriteArrayList l = new CopyOnWriteArrayList();
+
+ArrayBlockingQueue<String>
+            queue = new ArrayBlockingQueue<String>(capacitypackage com.journaldev.java;
+
+import java.util.HashMap;
+import java.util.Iterator;
+
+public final class FinalClassExample {
+
+	private final int id;
+
+	private final String name;
+
+	private final HashMap<String,String> testMap;
+
+	public int getId() {
+		return id;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * Accessor function for mutable objects
+	 */
+	public HashMap<String, String> getTestMap() {
+		//return testMap;
+		return (HashMap<String, String>) testMap.clone();
+	});
+
+}
+
+            public class HashMapSyncExample {
+                public static void main(String args[]) {
+                     HashMap<Integer, String> hmap= new HashMap<Integer, String>();
+                     hmap.put(2, "Anil");
+                     hmap.put(44, "Ajit");
+                     hmap.put(1, "Brad");
+                     hmap.put(4, "Sachin");
+                     hmap.put(88, "XYZ");
+
+                     Map map= Collections.synchronizedMap(hmap);
+                     Set set = map.entrySet();
+                     synchronized(map){
+                         Iterator i = set.iterator();
+                         // Display elements
+                         while(i.hasNext()) {
+                            Map.Entry me = (Map.Entry)i.next();
+                            System.out.print(me.getKey() + ": ");
+                            System.out.println(me.getValue());
+                         }
+                     }
+                }
+            }
+
+
+
+            package com.journaldev.java;
+
+            import java.util.HashMap;
+            import java.util.Iterator;
+
+            public final class FinalClassExample {
+
+            	private final int id;
+
+            	private final String name;
+
+            	private final HashMap<String,String> testMap;
+
+            	public int getId() {
+            		return id;
+            	}
+
+
+            	public String getName() {
+            		return name;
+            	}
+
+            	/**
+            	 * Accessor function for mutable objects
+            	 */
+            	public HashMap<String, String> getTestMap() {
+            		//return testMap;
+            		return (HashMap<String, String>) testMap.clone();
+            	}
+
+            }
+
+
+how hashmap works
+https://www.geeksforgeeks.org/internal-working-of-hashmap-java/
+
+capacity = number of buckets * load factor
+
+
+2nd Singleton implementation, he gave lot of clue, I found each of the clues that he gave and finally gave him the solution.
+3rd about my project work in the previous company

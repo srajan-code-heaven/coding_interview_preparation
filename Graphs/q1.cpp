@@ -35,14 +35,6 @@ void Graph::DFSUtil(int source,bool visited[])
         {
             cout << top << " ";
             visited[top] = true;
-           // list<int>::iterator i;
-            // for(auto i=l[top].begin();i!=l[top].end();i++)
-            // {
-            //     if(!visited[*i])
-            //      {
-            //          s.push(*i);
-            //      }
-            // }
             for(auto i:l[top])
             {
                 if(!visited[i])

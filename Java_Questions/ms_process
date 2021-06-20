@@ -1,0 +1,70 @@
+Today I appeared for the interview,
+telephonic
+---------------
+3 questions.
+1st question is about multi-threading.
+2nd question find all common string in large set of files in optimized way.
+3rd question was about collection list and sets.
+
+1st Technical
+--------------------
+1st about hashmap, how do we implement hashcode() and equals().
+how hashmap works.
+2nd Singleton implementation, he gave lot of clue, I found each of the clues that he gave and finally gave him the solution.
+https://www.geeksforgeeks.org/singleton-design-pattern/
+
+// Double Checked Locking based Java implementation of
+// singleton design pattern
+class Singleton
+{
+    private volatile static Singleton obj;
+
+    private Singleton() {}
+
+    public static Singleton getInstance()
+    {
+        if (obj == null)
+        {
+            // To make thread safe
+            synchronized (Singleton.class)
+            {
+                // check again as multiple threads
+                // can reach above step
+                if (obj==null)
+                    obj = new Singleton();
+            }
+        }
+        return obj;
+    }
+} 
+3rd about my project work in the previous company.
+
+2nd Technical
+--------------------
+1st he asked me to explain the whole flow of data from client page to data base and explained all the details about MVC pattern and other.
+2nd about database.
+3rd he asked me a design question, I managed to answer that, they will give lot of clues, you have to grab their clues and proceed, by the way think loudly, so that they will understand what you are thinking, which helps them understand your thought process, your way of approach to each and every problem.
+4th he asked me about a hobby and he asked me the moral of the book I recently read. we were talking about more than 20 min on this particular question alone.
+5th why I should hire you.
+
+You should hire me because i may not be the best at present but i have potential and is willing to become best.
+And one thing i am sure of where ever i go till now i have left a mark , done something which is not so ordinary ,
+so i hope the same continue if i get chance to be at ms and last but not the investment banking....
+
+
+3rd Technical
+--------------------
+1st he asked me to implement immutable,
+2nd about constructors and runtime polymorphism.
+3rd he asked me to implement hashmap and he asked me about the datastructure I use to implement that.(this question I struggled a bit).
+
+4th HR
+-----------
+1st about the National level paper presentation details
+2nd about new concept I learned recently.
+3rd about the project I work with the previous company
+4th Roles and Responsibilities in previous company
+5th he asked me something that I am very proud of myself
+6th final question is do I have any questions for them.
+
+Everything seems like went well... waiting for response... finger crossed.

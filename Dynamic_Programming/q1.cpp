@@ -31,8 +31,6 @@ int minCoins(int coins[],int n,int tar_amount)
 }
 
 
-
-
 int main()
 {
   int coins[] = {9, 6, 5, 1};

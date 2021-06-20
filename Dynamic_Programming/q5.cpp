@@ -1,3 +1,5 @@
+//collect max coins 
+
 #include <bits/stdc++.h>
 #include <stdio.h>
 using namespace std;
@@ -25,6 +27,7 @@ int getmindp(vector<vector<int>> *mcost,vector<vector<int>> *cost,int m,int n,in
         }
     }
 }
+
 void getmincost(vector<vector<int>> *cost,int n)
 {
     	//int mcost[n][n];

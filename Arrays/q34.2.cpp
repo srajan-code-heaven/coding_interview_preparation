@@ -22,3 +22,4 @@ int main() {
     cout<<getMissingNo(arr,sizeof(arr)/sizeof(arr[0]));
     return 0;
 }
+    

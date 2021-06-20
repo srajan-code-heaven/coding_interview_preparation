@@ -35,12 +35,12 @@ void leftrotatearray(int arr[],int k,int arr_size)
             arr[j]=arr[l];
             j=l;
         }
-        arr[j]=temp;
+        arr[l]=temp;
     }
 }
 
 void printArray(int arr[], int size)
-{ 
+{
     for (int i = 0; i < size; i++)
         cout << arr[i] << " ";
 }

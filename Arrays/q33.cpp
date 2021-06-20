@@ -31,10 +31,10 @@ int main(void)
     int n = sizeof(ar2)/sizeof(ar2[0]);
     merge(ar1, ar2, m, n);
 
-    cout << "After Merging nFirst Array: ";
+    cout << "After Merging First Array: ";
     for (int i=0; i<m; i++)
         cout << ar1[i] << " ";
-    cout << "nSecond Array: ";
+    cout << "Second Array: ";
     for (int i=0; i<n; i++)
         cout << ar2[i] << " ";
    return 0;

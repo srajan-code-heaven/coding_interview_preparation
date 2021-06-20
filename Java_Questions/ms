@@ -1,0 +1,102 @@
+//morgan stanley question set
+
+reverse linked list
+
+implement queue using stacks
+
+implement stacks using queues
+
+reverse a stack without "new" key word in java
+
+Login to the problem : Count the occurrences of numbers in an array
+
+Sort upto first k elements in ascending order and remaining in descending order remember to handle the corner cases of k>length of array as in this case sort by ascending order entire array.
+
+Code 2: Two string were given find common character of two string and print all possible permutations of particular length.
+
+(Including 2 coding questions https://www.geeksforgeeks.org/rearrange-positive-and-negative-numbers/ and Check if left half of String has same characters as the right half)
+
+1. You have 2 arrays one representing arrival time of n trains and other departure time of n trains (Not corresponding trains) . Tell the minimum number of stations required for no clashes.
+
+2. A file given having a paragraph find the most occurring word and in it first non repeating characters.
+
+ Many travel tickets available Mumbai->delhi, Goa->chennai, Delhi->Bangalore etc. We have to print series of cities in which we can travel using these tickets. Basically Topological sorting question.
+
+ 4. Reverse a line word wise eg: Hi my name is xyz -> iH ym eman si zyx
+Then he asked me if I had any question for him.
+
+
+system design question like designing E-commerce website and designing makemytrip like service.
+https://www.youtube.com/watch?v=EpASu_1dUdE
+
+
+abstract classes, interface, difference between the two, when to use which, and so on)
+
+
+https://practice.geeksforgeeks.org/problems/find-whether-path-exist/0
+
+
+https://practice.geeksforgeeks.org/problems/convex-hull/0
+
+
+You are given a very big file you need to give the top 10 most appeared words in that file.
+
+
+https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1
+
+
+
+Q2 – Given a string find all substrings of this string which contains only vowels and all vowels at least once.
+
+
+https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1
+
+b. Difference between Processes and Threads. How they communicate with each other? Who assigns them tasks? How? How to achieve thread synchronization? Write a code to explain working of Mutexes and Semaphores.
+
+
+Virtual functions,Base/Inherited class pointers pointing to Inherited/Base class objects etc etc )
+
+
+Find Inorder successor in BST
+
+
+2. Matrix Problem
+Given a square matrix A[][] of size N*N.Each element A[i][j] of matrix is red color or blue color.
+Red ->1
+Blue ->0
+You are also given a number k.Find the side of largest square submatix having atmost k
+red cells.
+
+
+1.Difference between abstract and interface?
+2.“Animal” should be abstract class or interface?
+3.Why java developers thought to introduce interface?
+4.Few deep thinking questions on same abstract vs interface topic.
+5.Polymorphic Reference in Java.
+
+https://practice.geeksforgeeks.org/problems/palindrome-string/0
+
+
+2.Using stack and queue together,check if string is palindrome or not.
+
+
+Given an array and a sum,find if there is any pair in array having sum equal to givensum.
+
+
+There is a square matrix ‘X’ of dimension n x n. It consists of zeros and ones. Given a value k, print the dimensions of a sub matrix of X consisting at most k zeros.
+
+https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1
+
+all 4 conditions of deadlock avoidance
+me
+h&w
+cw
+no preemption
+**********************************************PREPARATION********
+
+LinkedList<String> words = new LinkedList<>();
+
+List<String> unmodifiableList = Collections.unmodifiableList(words);
+
+
+we cant modify unmodifiableList but we can modify words which inturn modifies unmodifiableList

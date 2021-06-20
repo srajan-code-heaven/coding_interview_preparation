@@ -4,7 +4,6 @@ import java.io.*;
 
 public class Main
 {
-
     static int findElement(int arr[],int n)
     {
         int max_left[]=new int[n];

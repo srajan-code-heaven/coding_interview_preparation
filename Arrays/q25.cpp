@@ -11,7 +11,7 @@ int countWays(int s,int m)
     for(int i=2;i<=s;i++)
     {
         res[i]=0;
-        for(int j=1;j<=i &&j<=m;j++)
+        for(int j=1;j<=i && j<=m;j++)
         {
             res[i]=res[i]+res[i-j];
         }

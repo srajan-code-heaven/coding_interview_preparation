@@ -21,6 +21,7 @@ int getMinDiff(int arr[],int n,int k)
     {
         int subs=arr[i]-k;
         int add= arr[i]+k;
+        //agar aap small to chota nhi kar paa rahe ya large ko bada nhi kar pa rahe to no problem continue
         if(subs>=small || add <=large)
         {
             continue;
